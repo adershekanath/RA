@@ -6,7 +6,7 @@
 
 html { font-size: 14px; }
 *, *::after, *::before { box-sizing: border-box; }
-body { font-size: 15px; line-height: 30px; font-weight: 400; background-color: #000; color: #828282; font-family: 'Roboto', sans-serif; padding: 0; margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-break: break-word }
+body { font-size: 15px; line-height: 30px; font-weight: 400; background-color: #fff; color: #828282; font-family: 'Roboto', sans-serif; padding: 0; margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-break: break-word }
 body, html { -moz-osx-font-smoothing: grayscale; }
 a { text-decoration: none; }
 a:hover, a:focus { text-decoration: none; outline: none; outline-offset:0; color: #0038e3; }
@@ -106,8 +106,8 @@ h6 { font-size:1.80rem; line-height:2.5rem; }
 .parallax-title { padding: 16px 35px; display: inline-block }
 
 /* text color, link color and link hover color */
-.text-white, .btn-link.text-white, a.text-white-hover:hover { color:#fff; }
-.text-black, .btn-link.text-black,  a.text-black-hover:hover { color:#000; }
+.text-white, .btn-link.text-white, a.text-white-hover:hover { color:#fff!important; }
+.text-black, .btn-link.text-black,  a.text-black-hover:hover { color:#000!important; }
 .text-extra-dark-gray, .btn-link.text-extra-dark-gray, a.text-extra-dark-gray-hover:hover { color:#232323; }
 .text-dark-gray, .btn-link.text-dark-gray, a.text-dark-gray-hover:hover { color:#626262; }
 .text-extra-medium-gray, .btn-link.text-extra-medium-gray, a.text-extra-medium-gray-hover:hover { color: #757575; }
@@ -606,8 +606,8 @@ input.btn:focus { border-width: 2px; }
 .btn.btn-extra-large { font-size:14px; padding: 16px 40px;}
 .btn-dual .btn { margin-left: 10px; margin-right: 10px; }
 .btn-dual .btn:first-child {margin-left: 0}
-.btn .right-icon, .btn-link .right-icon { margin-left: 8px; transition: none; -moz-transition: none; -webkit-transition: none; -ms-transition: none; -o-transition: none; }
-.btn .left-icon, .btn-link .left-icon { margin-right: 8px; transition: none; -moz-transition: none; -webkit-transition: none; -ms-transition: none; -o-transition: none; }
+.btn .right-icon, .btn-link .right-icon { margin-left: 0px; transition: none; -moz-transition: none; -webkit-transition: none; -ms-transition: none; -o-transition: none; }
+.btn .left-icon, .btn-link .left-icon { margin-right: 0px; transition: none; -moz-transition: none; -webkit-transition: none; -ms-transition: none; -o-transition: none; }
 
 /* rounded button */
 .btn.btn-round-edge-small { border-radius: 2px; }
@@ -652,7 +652,7 @@ input.btn:focus { border-width: 2px; }
 .btn.btn-fancy.btn-small { font-size:11px; letter-spacing: 0.5px; padding: 10px 24px;}
 .btn.btn-fancy.btn-medium { font-size:12px; letter-spacing: 1px; padding: 12px 28px;}
 .btn.btn-fancy.btn-large { font-size:13px; letter-spacing: 1px; padding: 13px 32px;}
-.btn.btn-fancy.btn-extra-large { font-size:15px; letter-spacing: 1px; padding: 18px 38px; }
+.btn.btn-fancy.btn-extra-large { font-size:15px; letter-spacing: 1px; padding: 18px 24px; }
 
 /* expanded button */
 .btn.btn-expand-ltr { position: relative; z-index: 1; }
@@ -2224,7 +2224,7 @@ input.btn:focus { border-width: 2px; }
 .icon-country { width: 16px; height: 16px; display: inline-block; margin:0 10px 0 5px; }
 
 /* social media icon */
-.extra-small-icon, .small-icon, .medium-icon, .large-icon, .extra-large-icon { list-style: none; padding: 0; }
+.extra-small-icon, .small-icon, .medium-icon, .large-icon, .extra-large-icon { list-style: none; padding-bottom: 15px; }
 .extra-small-icon li, .small-icon li, .medium-icon li, .large-icon li, .extra-large-icon li { display: inline-block; }
 .extra-small-icon li:first-child, .small-icon li:first-child, .medium-icon li:first-child, .large-icon li:first-child, .extra-large-icon li:first-child { margin-left: 0; }
 .extra-small-icon li:last-child, .small-icon li:last-child, .medium-icon li:last-child, .large-icon li:last-child, .extra-large-icon li:last-child { margin-right: 0; }
@@ -2234,7 +2234,7 @@ input.btn:focus { border-width: 2px; }
 .large-icon li { margin: 0 10px; }
 .extra-large-icon li { margin: 0 12px; }
 .extra-small-icon a { font-size: 14px; width:30px; height:30px;line-height:30px; }
-.small-icon a { font-size: 16px; width: 40px; height:40px;line-height: 40px; }
+.small-icon a {  font-size: 16px; padding: 3px 20px;}
 .medium-icon a { font-size: 20px; width: 50px; height:50px;line-height: 50px; }
 .large-icon a { font-size: 24px; width: 60px; height: 60px;line-height: 60px; }
 .extra-large-icon a { font-size: 30px; width: 70px; height: 70px;line-height: 70px; }
@@ -2338,7 +2338,7 @@ a.likes-count:hover {box-shadow: 0 0 10px rgba(23,23,23,.1); color: #232323}
 
 /* social icon style 06 */
 .social-icon-style-06 a { text-align: center; display:inline-block; color: #232323; }
-.social-icon-style-06 a:hover { color: #fff; border-radius: 100%; background-color: #0038e3; }
+.social-icon-style-06 a:hover { color: #fff; border-radius: 50px; background-color: #0038e3; }
 
 /* social icon style 07 */
 .social-icon-style-07 { position: relative; }
@@ -3210,7 +3210,7 @@ header .header-cart-icon .cart-count { position: absolute; top: -6px; right: -10
 .grid.gutter-small li { padding:5px 5px; }
 .grid.gutter-medium li { padding:7px 7px; }
 .grid.gutter-large li { padding:10px 10px; }
-.grid.gutter-extra-large li { padding:15px; }
+.grid.gutter-extra-large li { padding:5px; }
 .grid.gutter-double-extra-large li { padding:20px; }
 .grid.gutter-triple-extra-large li { padding:30px; }
 
@@ -4226,16 +4226,14 @@ input[type="checkbox"].error { box-shadow: 0px 0px 0px 1px rgb(255 0 0), 1px 1px
 .gdpr-container .gdpr-content { display: inline-block; margin-right: 20px;}
 .gdpr-container .btn { display: inline-block; }
 
-.margin-250-minus {
-  margin-top: -250px;
-}
 
-.g-box {
-  background: linear-gradient(to right, #0044FA, #212121);
-  height: 40px;
-  width: 80%;
-  margin-top: -75px;
-  margin-left: -10px;
-  border-radius: 4px;
-  z-index: 0;
+
+.bg-main {
+    background-image: linear-gradient(40deg, rgba(0,0,0,1) 3%, rgba(0,0,0,0) 40%), url(../images/aderesh.jpg);
+    background-position: bottom!important;
+}
+@media (max-width: 767px){
+    .bg-main {
+        background-image: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 60%), url(../images/aderesh-ar.jpg);
+    }
 }
