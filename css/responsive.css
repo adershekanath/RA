@@ -5890,7 +5890,7 @@
 
     /* magnific popup */
     button.mfp-arrow, .mfp-arrow:active { height: 50px; width: 50px; margin-top: -25px; opacity: 1; }
-    .mfp-arrow:before { margin: 0 auto; width: 100%; height: 100%; display: inline-block; vertical-align: middle; text-align: center; line-height: 50px; border: 0; }
+    .mfp-arrow:before { margin: 0 auto; width: 100%; height: 100%; display: inline-block; vertical-align: middle; text-align: center; line-height: 45px; border: 2px transparent solid; }
 
     /* content box image */
     .content-box-image { height: 100%; }
